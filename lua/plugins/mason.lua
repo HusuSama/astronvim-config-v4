@@ -1,8 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Mason plugins
-
----@type LazySpec
+-- customize mason plugins
 return {
   -- use mason-lspconfig to configure LSP installations
   {
@@ -11,11 +7,32 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "lua_ls",
-        -- add more arguments for adding more language servers
+        "lua_ls", "pyright", "bashls", "gopls", "jsonls", "marksman", "rust_analyzer", "sqlls", "taplo", "yamlls",
+        "powershell_es", "volar", "tsserver"
       })
-    end,
+      -- local lspconfig = require("lspconfig")
+      -- local mason_reg = require("mason-registry")
+      -- local vue_language_path = mason_reg.get_package("vue-language-server"):get_install_path() ..
+      --     "/node_modules/@vue/language-server"
+      -- require("mason-lspconfig").setup_handlers({
+      --   function(server_name)
+      --     lspconfig.tsserver.setup({
+      --       init_options = {
+      --         plugins = {
+      --           {
+      --             name = "@vue/typescript-plugin",
+      --             location = vue_language_path,
+      --             languages = { 'vue', 'typescript', 'javascript' }
+      --           },
+      --         },
+      --       },
+      --       filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+      --     })
+      --   end
+      -- })
+    end
   },
+  -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
     "jay-babu/mason-null-ls.nvim",
