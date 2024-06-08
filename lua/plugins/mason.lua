@@ -7,8 +7,7 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "lua_ls", "pyright", "bashls", "gopls", "jsonls", "marksman", "rust_analyzer", "sqlls", "taplo", "yamlls",
-        "powershell_es", "volar", "tsserver"
+        "lua_ls", "pyright", "jsonls", "marksman", "sqlls", "taplo", "yamlls",
       })
       -- local lspconfig = require("lspconfig")
       -- local mason_reg = require("mason-registry")

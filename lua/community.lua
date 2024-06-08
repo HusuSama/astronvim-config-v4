@@ -34,4 +34,5 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.pack.vue"},
 }
