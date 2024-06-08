@@ -78,6 +78,7 @@
   "resession.nvim": { "branch": "master", "commit": "cc819b0489938d03e4f3532a583354f0287c015b" },
   "rose-pine": { "branch": "main", "commit": "87aa437172357ad8f916942bca249ceadc6c68b1" },
   "smart-splits.nvim": { "branch": "master", "commit": "66fda3a601a5b4c679656f15eb6ddd613c8d3216" },
+  "tailwind-tools.nvim": { "branch": "master", "commit": "a95aaf11d9deca884743c9017323c0ffea0015f2" },
   "telescope-live-grep-args.nvim": { "branch": "master", "commit": "4122e146d199c0d6d1cfb359c76bc1250d522460" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "todo-comments.nvim": { "branch": "main", "commit": "70a93ce66083699571adc361166504b03cc39c2b" },
