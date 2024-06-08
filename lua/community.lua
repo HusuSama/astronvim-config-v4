@@ -9,7 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
-    { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.comment-box-nvim" },
@@ -34,5 +34,6 @@ return {
   { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  { import = "astrocommunity.pack.vue"},
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.python" },
 }
