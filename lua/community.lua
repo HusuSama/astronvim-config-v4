@@ -36,4 +36,5 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.rust"}
 }
