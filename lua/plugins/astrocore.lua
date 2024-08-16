@@ -128,7 +128,7 @@ return {
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<S-Enter>"] = { "o<Esc>", desc = "在下方创建空行" },
-        ["<C-\\>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+        ["<C-\\>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
         ["<C-F12>"] = { function() require("aerial").toggle() end, desc = "Symbols outline" },
         ["<leader>fg"] = {
           function() require("telescope").extensions.live_grep_args.live_grep_args() end,
