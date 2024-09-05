@@ -95,27 +95,27 @@ function open_outer_terminal(terminal_name)
 end
 
 -- neovide 切换输入法
-local function set_ime(args)
-  if args.event:match "Enter$" then
-    vim.g.neovide_input_ime = true
-  else
-    vim.g.neovide_input_ime = false
-  end
-end
-
-local ime_input = vim.api.nvim_create_augroup("ime_input", { clear = true })
-
-vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
-  group = ime_input,
-  pattern = "*",
-  callback = set_ime,
-})
-
-vim.api.nvim_create_autocmd({ "CmdlineEnter", "CmdlineLeave" }, {
-  group = ime_input,
-  pattern = "[/\\?]",
-  callback = set_ime,
-})
+-- local function set_ime(args)
+--   if args.event:match "Enter$" then
+--     vim.g.neovide_input_ime = true
+--   else
+--     vim.g.neovide_input_ime = false
+--   end
+-- end
+--
+-- local ime_input = vim.api.nvim_create_augroup("ime_input", { clear = true })
+--
+-- vim.api.nvim_create_autocmd({ "InsertEnter", "InsertLeave" }, {
+--   group = ime_input,
+--   pattern = "*",
+--   callback = set_ime,
+-- })
+--
+-- vim.api.nvim_create_autocmd({ "CmdlineEnter", "CmdlineLeave" }, {
+--   group = ime_input,
+--   pattern = "[/\\?]",
+--   callback = set_ime,
+-- })
 
 -- 删除luasnip映射方法
 function remove_tab()
@@ -202,8 +202,14 @@ return {
         vim.api.nvim_set_keymap("n", "<S-F7>", open_outer_terminal(nil), { silent = true, noremap = true })
         vim.api.nvim_set_keymap("n", "<leader>E", "<cmd>!explorer .<cr>", { silent = true, noremap = true })
       else
-        vim.api.nvim_set_keymap("n", "<S-F7>", "<cmd>!kitty .<cr>", { silent = true, noremap = true })
+        -- vim.api.nvim_set_keymap("n", "<S-F7>", "<cmd>!kitty .<cr>", { silent = true, noremap = true })
         -- vim.api.nvim_set_keymap("n", "<S-F7>", "<cmd>!wezterm start --cwd .<cr>", { silent = true, noremap = true })
+        vim.api.nvim_set_keymap(
+          "n",
+          "<S-F7>",
+          '<cmd>call jobstart("wezterm start --cwd .")<cr>',
+          { silent = true, noremap = true }
+        )
         vim.api.nvim_set_keymap("n", "<leader>E", "<cmd>!nautilus .<cr>", { silent = true, noremap = true })
       end
     end,
