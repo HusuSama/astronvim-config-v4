@@ -187,7 +187,7 @@ return {
     pattern = "term://*",
     callback = function()
       local opts = { buffer = 0 }
-      vim.keymap.set("t", "<leader><esc>", [[<C-\><C-n>]], opts)
+      vim.keymap.set("t", "<C-q>", [[<C-\><C-n>]], opts)
       vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
     end,
   }),
