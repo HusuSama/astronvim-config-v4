@@ -131,6 +131,13 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<S-Enter>"] = { "o<Esc>", desc = "在下方创建空行" },
         ["<C-\\>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
+        -- 使用 telescope 打开 aerial
+        -- telescope 打开形式可以搜索
+        ["<F12>"] = {
+          "<cmd>Telescope aerial<cr>",
+          desc = "Find aerial",
+        },
+        -- 侧边栏打开 aerial
         ["<C-F12>"] = { function() require("aerial").toggle() end, desc = "Symbols outline" },
         ["<leader>fg"] = {
           function() require("telescope").extensions.live_grep_args.live_grep_args() end,
@@ -151,15 +158,6 @@ return {
 
         -- LspRestart，将所有 <leader>R 开头的都作为重启某项服务的前缀
         ["<Leader>Rl"] = { "<cmd>LspRestart<cr>", desc = "重启LSP服务" },
-        -- 为 aerial 设置 telescope 显示筛选
-        ["<leader>ta"] = {
-          "<cmd>Telescope aerial<cr>",
-          desc = "Find aerial(telescope)",
-        },
-        ["<leader>fl"] = {
-          "<cmd>Telescope aerial<cr>",
-          desc = "Find aerial",
-        },
         -- markmap 监听
         ["<leader>MW"] = {
           function()
