@@ -72,6 +72,7 @@ return {
         resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
         -- neovide_cursor_animation_length = 0,
         -- neovide_cursor_trail_size = 0.4,
+        -- neovide 透明度设置
         neovide_transparency = 0.9,
         neovide_hide_mouse_when_typing = true,
         -- 自定义 vim-move 插件的功能键
@@ -150,6 +151,15 @@ return {
 
         -- LspRestart，将所有 <leader>R 开头的都作为重启某项服务的前缀
         ["<Leader>Rl"] = { "<cmd>LspRestart<cr>", desc = "重启LSP服务" },
+        -- 为 aerial 设置 telescope 显示筛选
+        ["<leader>ta"] = {
+          "<cmd>Telescope aerial<cr>",
+          desc = "Find aerial(telescope)",
+        },
+        ["<leader>fl"] = {
+          "<cmd>Telescope aerial<cr>",
+          desc = "Find aerial",
+        },
         -- markmap 监听
         ["<leader>MW"] = {
           function()
