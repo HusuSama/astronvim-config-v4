@@ -139,7 +139,7 @@ return {
         },
         -- 侧边栏打开 aerial
         ["<C-F12>"] = { function() require("aerial").toggle() end, desc = "Symbols outline" },
-        ["<leader>fg"] = {
+        ["<leader>fG"] = {
           function() require("telescope").extensions.live_grep_args.live_grep_args() end,
           desc = "telescope live grep args",
         },

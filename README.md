@@ -11,18 +11,6 @@ mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
 ```
 
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### windows克隆
-
-```powershell
-git clone https://github.com/AstroNvim/AstroNvim.git $env:LOCALAPPDATA\nvim
-```
-
 #### Create a new user repository from this template
 
 Press the "Use this template" button above to create a new repository to store your user configuration.
@@ -148,7 +136,7 @@ rustup compnent add rust-analyzer
 
 - `K` 显示文档，再点击一次 `K` 进入弹窗，移动到链接，使用 `gx` 前往链接地址 -- *normal*
 
-- `<leader>fg` ：使用 `telescope` 增加参数过滤  --*normal*：
+- `<leader>fG` ：使用 `telescope` 增加参数过滤  --*normal*：
   
   - `"test" testcases` ：搜索 `testcases` 目录下的 `test` 字符
   
