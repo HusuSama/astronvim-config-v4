@@ -85,7 +85,9 @@ rustup compnent add rust-analyzer
 
 - `<leader>Tq`：TODO快速修复 -- *normal*
 
-- `F7`：打开 `toggleterm`  -- *normal*
+- `F7`：水平方向打开 `toggleterm`  -- *normal*
+
+- `Ctrl+\`：同 F7 相同的 terminal 窗口，使用 `Ctrl+\` 然后使用 `Ctrl+n` 可回到normal模式（当前已设置，可以直接使用 `ESC` 来返回普通模式，也可以直接使用 `Ctrl+w` 切换窗口，如 `Ctrl+w+l`），normal模式下可以使用 `Ctrl+\` 或 `Ctrl+j/k` 或 `F7` 切换到编辑器中 --*normal*
 
 - `Shift+F7` ：打开外部的 ternimal，仅windows有效，默认 `pwsh`  -- *normal*
   
@@ -96,8 +98,6 @@ rustup compnent add rust-analyzer
 - `<leader>E`：快速在当前文件位置打开系统文件管理器，仅在 windows 中有效 -- *normal*
 
 - `Ctrl+Shift+F10`：运行代码/预览markdown等 -- *normal*
-
-- `Ctrl+\`：同 F7 相同的 terminal 窗口，使用 `Ctrl+\` 然后使用 `Ctrl+n` 可回到normal模式（当前已设置，可以直接使用 `ESC` 来返回普通模式，也可以直接使用 `Ctrl+w` 切换窗口，如 `Ctrl+w+l`），normal模式下可以使用 `Ctrl+\` 或 `Ctrl+j/k` 或 `F7` 切换到编辑器中 --*normal*
 
 - `Ctrl+F12`：侧边栏展示页面中所有函数变量等（aerial） -- *normal*
 

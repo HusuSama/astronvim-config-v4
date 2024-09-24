@@ -131,6 +131,7 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<S-Enter>"] = { "o<Esc>", desc = "在下方创建空行" },
         ["<C-\\>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
+	["<F7>"] = { "<cmd>ToggleTerm size=25 direction=horizontal<cr>", desc="ToggleTerm Harizontal"},  
         -- 使用 telescope 打开 aerial
         -- telescope 打开形式可以搜索
         ["<F12>"] = {
