@@ -45,6 +45,4 @@ return {
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
   { import = "astrocommunity.programming-language-support.nvim-jqx" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
-  -- 需要安装 code-minimap 软件
-  { import = "astrocommunity.split-and-window.minimap-vim" },
 }
