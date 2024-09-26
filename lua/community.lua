@@ -16,8 +16,11 @@ return {
   -- pack of languages server
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.vue" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  -- lsp tools
+  { import = "astrocommunity.lsp.lspsaga-nvim" },
   -- editing-support
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.comment-box-nvim" },
