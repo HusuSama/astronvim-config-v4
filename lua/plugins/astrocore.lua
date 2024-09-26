@@ -90,6 +90,15 @@ return {
       n = {
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
+        -- 关闭最后一个buffer自动到dashboard界面
+        ["<Leader>c"] = {
+          function()
+            local bufs = vim.fn.getbufinfo { buflisted = true }
+            require("astrocore.buffer").close(0)
+            if require("astrocore").is_available "alpha-nvim" and not bufs[2] then require("alpha").start() end
+          end,
+          desc = "Close buffer",
+        },
         ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
         ["<C-s>"] = { "<cmd>w<cr>", desc = "保存" },
         ["<C-a>"] = { "ggVG", desc = "全选" },
@@ -131,7 +140,7 @@ return {
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         ["<S-Enter>"] = { "o<Esc>", desc = "在下方创建空行" },
         ["<C-\\>"] = { "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle terminal" },
-	["<F7>"] = { "<cmd>ToggleTerm size=25 direction=horizontal<cr>", desc="ToggleTerm Harizontal"},  
+        ["<F7>"] = { "<cmd>ToggleTerm size=25 direction=horizontal<cr>", desc = "ToggleTerm Harizontal" },
         -- 使用 telescope 打开 aerial
         -- telescope 打开形式可以搜索
         ["<F12>"] = {
