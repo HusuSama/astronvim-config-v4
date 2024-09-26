@@ -45,13 +45,11 @@ nvim
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
-- python（可在 `community` 中注释）
-
-- golang（可在 `community` 中注释）
-
-- rust（可在 `community` 中注释）
+- 目标编程语言（从 `commnunity` 的 `pack` 查找对应语言去安装）
 
 - markmap（`npm install -g markmap-cli`）
+
+- `code-minimap`（使用小地图 `code-minimap` 会需要）
 
 - [fd](https://github.com/sharkdp/fd) （`python` 的 `envselect` 插件需要使用工具
 
@@ -187,3 +185,12 @@ rustup compnent add rust-analyzer
 - `Ctrl+k` ：插入模式下，快速将当前行切换到中间，相当于普通模式下 `zz`  -- *normal*
 
 - `ga` ：插件 [EasyAlign](https://github.com/junegunn/vim-easy-align) 快捷方式，选中可使用例如 `ga=` 对齐 `=` 前后，常用 `vipga=` -- *n, x, v*
+
+- `<leader>um`：插件 [code-minimap](https://github.com/wfxr/code-minimap) 切换按键，`code-minimap` 需要安装软件才可以使用
+
+- `lspsaga` 常用快捷键：
+  - `<leader>la`：code_action
+  - `<leader>lS`: outline
+  - `<leader>lc`: incoming_calls
+  - `<leader>lC`: outgoing_calls
+  - `<leader>R`: search references
