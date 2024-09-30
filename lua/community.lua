@@ -20,6 +20,8 @@ return {
   -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.markdown" },
   -- lsp tools
   { import = "astrocommunity.lsp.lspsaga-nvim" },
   -- editing-support
