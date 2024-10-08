@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.toml" },
   -- lsp tools
   { import = "astrocommunity.lsp.lspsaga-nvim" },
   -- editing-support
@@ -50,4 +51,5 @@ return {
   { import = "astrocommunity.programming-language-support.nvim-jqx" },
   -- { import = "astrocommunity.register.nvim-neoclip-lua" },
   { import = "astrocommunity.color.nvim-highlight-colors" },
+  { import = "astrocommunity.search.nvim-spectre" },
 }
