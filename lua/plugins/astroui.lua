@@ -13,10 +13,12 @@ return {
     -- change colorscheme
     -- colorscheme = "astrodark",
     -- colorscheme = "catppuccin-frappe",
+    colorscheme = "catppuccin-macchiato",
+    -- colorscheme = "catppuccin-mocha",
     -- colorscheme = "rose-pine",
     -- colorscheme = "onedark_vivid",
     -- colorscheme = "tokyonight-storm",
-    colorscheme = "night-owl",
+    -- colorscheme = "night-owl",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes

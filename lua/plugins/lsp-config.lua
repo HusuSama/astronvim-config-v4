@@ -13,6 +13,14 @@ return {
           },
         },
       },
+      -- ruff = {
+      --   trace = "messages",
+      --   init_options = {
+      --     settings = {
+      --       logLevel = "debug",
+      --     },
+      --   },
+      -- },
     },
   },
 }

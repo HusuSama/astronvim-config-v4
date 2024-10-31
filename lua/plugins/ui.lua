@@ -20,18 +20,18 @@ return {
         gitsigns = true,
         cmp = true,
       },
-      no_italic = true,
+      no_italic = false,
       no_underline = true,
       styles = {
         comments = {},
-        conditionals = {},
-        loops = {},
+        conditionals = { "italic" },
+        loops = { "italic" },
         functions = {},
-        keywords = {},
+        keywords = { "bold", "italic" },
         strings = {},
         variables = {},
         numbers = {},
-        booleans = {},
+        booleans = { "bold", "italic" },
         properties = {},
         types = {},
         operators = {},
@@ -76,10 +76,6 @@ return {
   },
   {
     "oxfist/night-owl.nvim",
-    opts = function(_, opts)
-      return require("astrocore").extend_tbl(opts, {
-        italics = false,
-      })
-    end,
+    opts = function(_, opts) return require("astrocore").extend_tbl(opts, {}) end,
   },
 }
