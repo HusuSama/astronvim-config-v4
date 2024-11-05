@@ -24,3 +24,4 @@ end
 require "lazy_setup"
 require "polish"
 -- require "utils"
+require("wezterm").set_user_var("IS_NVIM", true)

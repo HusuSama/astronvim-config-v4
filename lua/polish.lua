@@ -215,6 +215,19 @@ return {
     end,
   }),
 
+  -- 设置 wezterm 的 user_vals 数据
+  -- vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  --   group = vim.api.nvim_create_augroup("wezterm_user_vars", { clear = true }),
+  --   pattern = "*",
+  --   callback = function() require("wezterm").set_user_var("IS_NVIM", true) end,
+  -- }),
+  --
+  -- vim.api.nvim_create_autocmd({ "VimLeave" }, {
+  --   group = vim.api.nvim_create_augroup("wezterm_user_vars", { clear = true }),
+  --   pattern = "*",
+  --   callback = function() require("wezterm").set_user_val("IS_NVIM", false) end,
+  -- }),
+
   -- 自定义LuaSnip跳转快捷键
   -- InsertEnter set tab to jump next
   -- InsertLeave delete tab keymap
