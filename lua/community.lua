@@ -45,6 +45,7 @@ return {
   { import = "astrocommunity.test.neotest" },
   -- completion
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.completion.avante-nvim" },
   -- runner
   { import = "astrocommunity.code-runner.overseer-nvim" },
   -- others
